@@ -5,7 +5,7 @@
     </head>
 <body>
 	<script>
-	let versions = "Last Updated Program/Prices: 29/8/21 19:35 WIB";
+	let versions = "Last Updated Program/Prices: 29/8/21 20:20 WIB";
 	let up1 = "- New price checker! (Ancestral Only)";
 	let up2 = " ";
 	let up3 = " ";
@@ -96,7 +96,7 @@ let HargaBarangKu = HargaBarang * WlBuy; // Harga Barang Saya
 let HargaBarangBG = HargaBarang * WlBagas; // Harga Barang Bagas
 let taxitemku = HargaBarangBG / tax; // Tax Itemku
 let HargaBarangIK = HargaBarangBG + taxitemku; // Harga Barang ItemKu
-let taxbagas = (HargaBarangBG * 0.02) - HargaBarangBG; // Harga Tax Bagas
+let taxbagas = HargaBarangBG * 0.02;
 let profitkotor = HargaBarangBG - taxbagas; // Profit Kotor (Harga Barang Bagas - Tax bagas) 
 let calcubersih = profitkotor - HargaBarangKu; // Profit Bersih 
 let wlbersih = calcubersih / WlBuy;
