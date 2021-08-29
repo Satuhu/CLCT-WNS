@@ -98,8 +98,8 @@ let taxitemku = HargaBarangBG / tax; // Tax Itemku
 let HargaBarangIK = HargaBarangBG + taxitemku; // Harga Barang ItemKu
 let taxbagas = HargaBarangBG - HargaBarangKu; // Harga Tax Bagas
 let profitkotor = HargaBarangBG - taxbagas;
-		while(profitkotor <= HargaBarangKu) {
-		alert('TIDAK PROFIT')}// Profit Kotor (Harga Barang Bagas - Tax bagas) 
+		while(profitkotor >= HargaBarangKu) {
+		alert('TIDAK PROFIT');}// Profit Kotor (Harga Barang Bagas - Tax bagas) 
 let calcubersih = profitkotor - HargaBarangKu; //
 
 
