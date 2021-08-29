@@ -33,13 +33,14 @@
         <label>
             <button onclick="submitdata()"> Kalkulasi Perjumlahan </button>
             <button onclick="checkharga()"> Check Harga Ances </button>
-            <p>Last Updated Program/Prices: 29/8/21 11:26 WIB</p>
+            <p id="updates"></p>
         </label>        
     </form>
 
 <p id="demo"></p>
 
 <script>
+	document.getElementById("updates").innerHTML = versions;
     function checkharga() {
         let vers = versions;
         let wealth = 217;
