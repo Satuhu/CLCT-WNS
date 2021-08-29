@@ -5,7 +5,13 @@
     </head>
 <body>
 	<script>
-	let versions = "Last Updated Program/Prices: 29/8/21 11:38 WIB";</script>
+	let versions = "Last Updated Program/Prices: 29/8/21 11:38 WIB";
+	let up1 = "- New price checker! (Ancestral Only)";
+	let up2 = " ";
+	let up3 = " ";
+	let up4 = " ";
+	let up5 = " ";
+	</script>
     <title>Calculator Waans</title>
 
 <h2>Private Calculator</h2>
@@ -34,12 +40,24 @@
             <button onclick="submitdata()"> Kalkulasi Perjumlahan </button>
             <button onclick="checkharga()"> Check Harga Ances </button>
             <p id="updates"></p>
+		<ul> New Update Feature: </ul>
+		<li id="news1"></li>
+		<li id="news2"></li>
+		<li id="news3"></li>
+		<li id="news4"></li>
+		<li id="news5"></li>
         </label>        
     </form>
 
 <p id="demo"></p>
 
 <script>
+	document.getElementById("news1").innerHTML = up1;
+	document.getElementById("news2").innerHTML = up2;
+	document.getElementById("news3").innerHTML = up3;
+	document.getElementById("news4").innerHTML = up4;
+	document.getElementById("news5").innerHTML = up5;
+	
 	document.getElementById("updates").innerHTML = versions;
     function checkharga() {
         let vers = versions;
