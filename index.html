@@ -94,7 +94,7 @@ let tax = 20;
 // Calculator
 let HargaBarangKu = HargaBarang * WlBuy; // Harga Barang Saya
 let HargaBarangBG = HargaBarang * WlBagas; // Harga Barang Bagas
-let taxitemku = HargaBarangBG / tax; // Tax Itemku
+let taxitemku = HargaBarangBG * 0.05; // Tax Itemku
 let HargaBarangIK = HargaBarangBG + taxitemku; // Harga Barang ItemKu
 let taxbagas = HargaBarangBG * 0.02;
 let profitkotor = HargaBarangBG - taxbagas; // Profit Kotor (Harga Barang Bagas - Tax bagas) 
@@ -109,7 +109,7 @@ let taxitem = rp + taxitemku;
 let taxbagasdis = rp + taxbagas;
 let kotor = rp + profitkotor;
 let bersih = rp + calcubersih;
-let withwl = calcubersih + wl;
+let withwl = wlbersih + wl;
 
 alert('Perkiraan:' + '\n' + 'Harga barang asli: ' + Asli + '\n' + 'Harga barang bagas: ' + Bagas + '\n' + 'Harga Barang Bagas + Tax: ' + ItemKu + '\n' + 'Tax from iTemKu: ' + taxitem + '\n' + 'Tax from bagas: ' + taxbagasdis + '\n' + 'Profit Kotor: ' + kotor + '\n' + 'Profit Bersih: ' + '\n' + bersih + ' / ' + withwl)
 	console.log('Success showing result.');
