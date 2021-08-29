@@ -86,7 +86,7 @@
 let rp = "Rp. ";
 // DATA HARGA HARGA
 let namabarang = namabar;
-let HargaBarang = nama
+let HargaBarang = nama;
 let WlSell = wlku; // Harga Jual Satuan Wl
 let WlBuy = wlkubuy; // Harga Beli Satuan Wl
 let WlBagas = 200;
@@ -96,7 +96,7 @@ let HargaBarangKu = HargaBarang * WlBuy; // Harga Barang Saya
 let HargaBarangBG = HargaBarang * WlBagas; // Harga Barang Bagas
 let taxitemku = HargaBarangBG / tax; // Tax Itemku
 let HargaBarangIK = HargaBarangBG + taxitemku; // Harga Barang ItemKu
-let taxbagas = HargaBarangBG - (HargaBarangBG * 0.02); // Harga Tax Bagas
+let taxbagas = (HargaBarangBG * 0.02) - HargaBarangBG; // Harga Tax Bagas
 let profitkotor = HargaBarangBG - taxbagas; // Profit Kotor (Harga Barang Bagas - Tax bagas) 
 let calcubersih = profitkotor - HargaBarangKu; // Profit Bersih 
 let wlbersih = calcubersih / WlBuy;
