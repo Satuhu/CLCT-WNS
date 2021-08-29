@@ -79,37 +79,32 @@
     console.log('Success showing prices.');
     }
 	function submitdata() {
-			var namabarang = document.getElementById("namabarang").value;
+	    var namabar = document.getElementById("namabarang").value;
             var nama = document.getElementById("Nama").value;
             var wlku = document.getElementById("wlku").value;
             var wlkubuy = document.getElementById("wlkubuy").value;
 let rp = "Rp. ";
-let harga = nama;
-let wlbag = 200;
-let wlme = wlku;
-let wlbuy = wlkubuy;
+// DATA HARGA HARGA
+let namabarang = namabar;
+let HargaBarang = nama
+let WlSell = wlku; // Harga Jual Satuan Wl
+let WlBuy = wlkubuy; // Harga Beli Satuan Wl
+let WlBagas = 200;
 let tax = 20;
-let wl = "(WL)";
-let harki = harga * wlme; // Harga Asli Barang bila harga 185
-let harog = harga * wlbag; // Harga Original
-let harogdis = rp + harga * wlbag; // Harga Original Display
-let harit1 = harog / tax;
-let harit = harit1 + harog; 
-let haritdis = rp + harit; // Set Harga Display
-let taxit = harit - harog;
-let taxitdis = rp + taxit; // Tax ItemKu Display
-let taxbag = harog - harki;
-let taxbagdis = rp + taxbag; // Tax Bagas Display
-let pdpt = harog - taxbag;
-let pdptdis = rp + pdpt; // Pendapatan Display
-let profitku = wlbuy * harga;
-let profitku1 = pdpt - profitku;
-let profitkudis = rp + profitku1; // Profitku Display
-let redraw = profitku1 / wlbuy;
-let redrawdis = redraw + wl; // Redraw Money To Wls
+// Calculator
+let HargaBarangKu = HargaBarang * WlBuy; // Harga Barang Saya
+let HargaBarangBG = HargaBarang * WlBagas; // Harga Barang Bagas
+let taxitemku = HargaBarangBG / tax; // Tax Itemku
+let HargaBarangIK = HargaBarangBG + taxitemku; // Harga Barang ItemKu
+let taxbagas = HargaBarangBG - HargaBarangKu; // Harga Tax Bagas
+let profitkotor = HargaBarangBG - taxbagas;
+		while(profitkotor <= HargaBarangKu) {
+		alert('TIDAK PROFIT')}// Profit Kotor (Harga Barang Bagas - Tax bagas) 
+let calcubersih = profitkotor - HargaBarangKu; //
 
 
-alert("Nama Barang: " + namabarang + "\n" + "Harga Original: " + harogdis + "\n" + "Set Harga ItemKu: " + haritdis + "\n" + "Tax Itemku: " + taxitdis + "\n" + "Tax Bagas: " + taxbagdis + "\n" + "Yang Kudapat: " + pdptdis + "\n" + "Profitku: " + profitkudis + " / " + redrawdis)
+
+alert()
 	console.log('Success showing result.');
 	}
 </script>
