@@ -1,188 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        
-        <meta name="viewport" content="width=device-widht, initial-scale=1">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grub Pesantren</title>
+</head>
 <body>
-	<script>
-	let versions = "Last Updated: 5/9/21 14:04 WIB";
-	let up1 = "- New UI design.";
-	let up2 = "- Optimizing code";
-	let up3 = " ";
-	let up4 = " ";
-	let up5 = " ";
-		var pinging = 1;
-		while (pinging <= 25) {
-			console.log('(' + pinging + ')' + ' Pinging website...');
-			pinging++;
-		};
-	</script>
-    <title>Calculator Lambene</title>
-
-<h2 style="margin-top: -40px;">Private Calculator</h2>
-
-<p>Calculator only for l</p>
-    <form action="" method="POST" style="background-color: #8a17a6; border-radius: 15px; padding: 10px;">
-    	<label> Nama Barang : <br>
-            <br><input type="text" id="namabarang" size="25"><br>
-            <input type="text" value="                 ^^Optional" size="25" disabled>
-            </br><br>
-        </label>
-        <label> Harga Barang: 
-            <br><input type="text" id="Nama" value="" maxlength="4" size="15">
-            </br><br>
-        </label>
-        <label> Harga Jual satuan WL: 
-            <br><input type="text" id="wlku" maxlength="3" size="15" value="200">
-        </br><br>
-        </label>
-        <label> Harga Beli satuan WL: 
-            <br><input type="text" id="wlkubuy" value="150" maxlength="3" size="15">
-        </br>
-        </label>
-        <p> </p>
-        <label>
-            <button onclick="submitdata()" class="moButtons"> Kalkulasi Perjumlahan </button><br><br>
-            <button onclick="checkharga()" class="moButton"> Check Harga Ances </button>
-        </label> 
-    </form>
-
-        <p id="updates"></p>
-        <div style="text-align: left;">
-            <ul>Change Log:</ul>
-		<li id="news1"></li>
-		<li id="news2"></li>
-		<li id="news3"></li>
-		<li id="news4"></li>
-		<li id="news5"></li>
+    <header>
+        <h1>Grub Pesantren Shop.</h1>
+        <div class="list">
+            <a href="#" id="mks123">Tentang</a>
         </div>
+    </header>
+    <div class="isi">
+        <h2>Kami menjual berbagai jenis ayam!</h2>
+        <div>
+            <ul>
+                <li>Ayam jawa: 1 Ekor Rp. 25.000,-</li>
+                <li>Ayam Kedu: 1 Ekor Rp. 75.000,-</li>
+                <li>Ayam Potong: 1 Ekor Rp. 750.000,-</li>
+                <li>Ayam Horen: 1 Ekor Rp. 850.000,-</li>
+            </ul><br>
+            <p>Anda minat? <a href="#" id="contact">Hubungi kami</a></p>
+        </div>
+    </div>
+    <div>
+        <br>
+        <h2>Testimoni kita!</h2>
+        <img src="IMG-20210915-WA0072.jpg" alt="1" style="width: 553px; height: 415px;"> <br>
+        <img src="IMG-20210925-WA0032.jpg" alt="2"> <br>
+        <img src="IMG-20210927-WA0192.jpg" alt="3"> <br>
+        <img src="IMG-20210927-WA0193.jpg" alt="4"> <br>
+        <img src="IMG-20211007-WA0033.jpg" alt="5"> <br>
+        <img src="IMG-20211007-WA0202.jpg" alt="6"> <br>
+    </div>
+    <style>
+        body {
         
+            background-color: #535826;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header {
+            border-radius: 10px;
+            background: #98A13F;
 
-<p id="demo"></p>
-
-<script>
-	document.getElementById("news1").innerHTML = up1;
-	document.getElementById("news2").innerHTML = up2;
-	document.getElementById("news3").innerHTML = up3;
-	document.getElementById("news4").innerHTML = up4;
-	document.getElementById("news5").innerHTML = up5;
-	
-	document.getElementById("updates").innerHTML = versions;
-    function checkharga() {
-        let vers = versions;
-        let wealth = 217;
-        let wisdom = 225;
-        let orb = 220;
-        let seed = 235;
-        let tesseract = "890-900";
-        let wl = "WL";
-
-    alert("list Daftar Harga" + "\n" + "========" + "\n" + versions + "\n" + "========" + "\n" + "Ancestral Riches: " + wealth + wl + "\n" + "Ancestral Totem: " + wisdom + wl + "\n" + "Ancestral Orb: " + orb + wl + "\n" + "Ancestral Seed: " + seed + wl + "\n" + "Ancestral Tesseract: " + tesseract + wl + "\n" + " " + "\n" + "Thanks");
-    console.log('Success showing prices.');
-    }
-	function submitdata() {
-	    var namabar = document.getElementById("namabarang").value;
-            var nama = document.getElementById("Nama").value;
-            var wlku = document.getElementById("wlku").value;
-            var wlkubuy = document.getElementById("wlkubuy").value;
-let rp = "Rp. ";
-// DATA HARGA HARGA
-let namabarang = namabar;
-let HargaBarang = nama;
-let WlSell = wlku; // Harga Jual Satuan Wl
-let WlBuy = wlkubuy; // Harga Beli Satuan Wl
-let WlBagas = 200;
-let tax = 20;
-// Calculator
-let HargaBarangKu = HargaBarang * WlBuy; // Harga Barang Saya
-let HargaBarangBG = HargaBarang * WlBagas; // Harga Barang Bagas
-let taxitemku = HargaBarangBG * 0.05; // Tax Itemku
-let HargaBarangIK = HargaBarangBG + taxitemku; // Harga Barang ItemKu
-let taxbagas = HargaBarangBG * 0.02;
-let profitkotor = HargaBarangBG - taxbagas; // Profit Kotor (Harga Barang Bagas - Tax bagas) 
-let calcubersih = profitkotor - HargaBarangKu; // Profit Bersih 
-let wlbersih = calcubersih / WlBuy;
-// Display
-let wl = "WL";
-let Asli = rp + HargaBarangKu;
-let Bagas = rp + HargaBarangBG;
-let ItemKu = rp + HargaBarangIK;
-let taxitem = rp + taxitemku;
-let taxbagasdis = rp + taxbagas;
-let kotor = rp + profitkotor;
-let bersih = rp + calcubersih;
-let withwl = wlbersih + wl;
-
-alert('Perkiraan:' + '\n' + 'Harga barang asli: ' + Asli + '\n' + 'Harga barang bagas: ' + Bagas + '\n' + 'Harga Barang Bagas + Tax: ' + ItemKu + '\n' + 'Tax from iTemKu: ' + taxitem + '\n' + 'Tax from bagas: ' + taxbagasdis + '\n' + 'Profit Kotor: ' + kotor + '\n' + 'Profit Bersih: ' + '\n' + bersih + ' / ' + withwl)
-	console.log('Success showing result.');
-		console.log(bersih + withwl);
-	}
-</script>
-<style>
-    body {
-        font-family: 'Ubuntu', sans-serif; text-align: center;background-color: #590d6b; border-radius: 15px; margin-top: 40px; padding: 20px; color: white;
-    }
-    .moButtons {
-	box-shadow: 0px 1px 0px 0px #ffb0f3;
-	background:linear-gradient(to bottom, #e666ff 5%, #ff24ff 100%);
-	background-color:#e666ff;
-	border-radius:6px;
-	border:1px solid #a612a1;
-	display:inline-block;
-	cursor:pointer;
-	color:#f5f5f5;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #cc2fcc;
-}
-.moButtons:hover {
-	background:linear-gradient(to bottom, #ff24ff 5%, #e666ff 100%);
-	background-color:#ff24ff;
-}
-.moButtons:active {
-	position:relative;
-	top:1px;
-}
-    .moButton {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
-}
-.moButton:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
-}
-.moButton:active {
-	position:relative;
-	top:1px;
-}
-    @viewport {
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
-@-ms-viewport {
-    width: extent-to-zoom;
-    zoom: 1.0;
-}
-</style>
-
+        }
+        .list {
+            padding: 10px;
+        }
+        .list #mks123 {
+            color: black;
+        }
+        .isi {
+            padding: 5px;
+            border-radius: 5px;
+            background: #BECD28;
+        }
+    </style>
 </body>
 </html>
